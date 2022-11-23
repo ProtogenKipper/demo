@@ -17,6 +17,8 @@ public class FXMLController implements Initializable {
     @FXML
     private Label lblOut;
     
+  
+    
     @FXML
     private void btnClickAction(ActionEvent event) {
         try {
@@ -26,6 +28,8 @@ public class FXMLController implements Initializable {
 
             while (resultSet.next()){
                 lblOut.setText(resultSet.getString("product_name"));
+                //skuCol.setCellFactory(null);
+                
             }
 
         } catch (Exception e) {
