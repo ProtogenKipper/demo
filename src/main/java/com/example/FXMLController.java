@@ -34,6 +34,7 @@ public class FXMLController implements Initializable {
                 lblOut.setText(resultSet.getString("product_name"));
                 priceOut.setText(resultSet.getString("price"));
                 qtyOut.setText(resultSet.getString("quantity_avalible"));
+                
 
                 
                 //skuCol.setCellFactory(null);
