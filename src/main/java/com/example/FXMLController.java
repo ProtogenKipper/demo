@@ -16,6 +16,10 @@ public class FXMLController implements Initializable {
     
     @FXML
     private Label lblOut;
+    @FXML
+    private Label priceOut;
+    @FXML
+    private Label qtyOut;
     
   
     
@@ -28,6 +32,10 @@ public class FXMLController implements Initializable {
 
             while (resultSet.next()){
                 lblOut.setText(resultSet.getString("product_name"));
+                priceOut.setText(resultSet.getString("price"));
+                qtyOut.setText(resultSet.getString("quantity_avalible"));
+
+                
                 //skuCol.setCellFactory(null);
                 
             }
@@ -40,6 +48,6 @@ public class FXMLController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+    
     }    
 }
