@@ -1,10 +1,5 @@
 package com.example;
 import java.sql.* ;
-/*
-Put header here
-
-
- */
 
 import java.net.URL;
 import java.util.ResourceBundle;
