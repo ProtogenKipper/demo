@@ -30,7 +30,7 @@ public class FXMLController implements Initializable {
             ResultSet resultSet = statement.executeQuery("select * from products");
 
             while (resultSet.next()){
-                lblOut.setText(resultSet.getString("name"));
+                lblOut.setText(resultSet.getString("product_name"));
             }
 
         } catch (Exception e) {
